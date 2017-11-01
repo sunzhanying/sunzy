@@ -1,0 +1,62 @@
+
+<html>
+<head>
+<title>test</title>
+<style>
+.checkboxFour {
+	width: 40px;
+	height: 40px;
+	background: #ddd;
+	margin: 20px 90px;
+ 
+	border-radius: 100%;
+	position: relative;
+	
+}
+.checkboxFour label {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+ 
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+ 
+	background: #333;
+ 
+	
+}
+.checkboxFour input[type=checkbox]:checked + label {
+	background: #26ca28;
+}
+</style>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+
+<h3>Checkbox Four</h3>
+  	<div class="checkboxFour">
+  		<input type="checkbox" value="1" id="checkboxFourInput" name="" />
+	  	<label for="checkboxFourInput"></label>
+  	</div>
+	<br>
+	<script language="javascript"> 
+		document.write("<h1>JS保留两位小数例子</h1><br>");  
+	    var a=0;  
+	    document.write("原来的值："+a+"<br>");  
+	    document.write("两位小数点:"+a.toFixed(2)+"<br>四位小数点"+a.toFixed(4));  
+	</script> 
+
+
+</body>
+</html>
